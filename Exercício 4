@@ -1,0 +1,32 @@
+# Contador de Vogais, Consoantes, Espaços e Outros Caracteres
+
+# Entrada da frase pelo usuário
+frase = input("Digite uma frase: ")
+
+# Inicialização das variáveis de contagem
+vogais = 0
+consoantes = 0
+espacos = 0
+outros = 0
+
+# Lista de vogais para verificação
+lista_vogais = "aeiou"
+
+# Iteração sobre cada caractere da frase
+for caractere in frase:
+    if caractere.isalpha():  # Verifica se é uma letra
+        if caractere.lower() in lista_vogais:
+            vogais += 1
+        else:
+            consoantes += 1
+    elif caractere.isspace():
+        espacos += 1
+    else:
+        outros += 1
+
+# Exibição dos resultados
+print("\nResultado da contagem:")
+print(f"Vogais: {vogais}")
+print(f"Consoantes: {consoantes}")
+print(f"Espaços: {espacos}")
+print(f"Outros caracteres: {outros}")
