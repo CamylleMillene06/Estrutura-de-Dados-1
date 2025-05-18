@@ -1,0 +1,32 @@
+# Gerador de Tabuada - Versão Completa e Organizada
+
+# Exibe uma mensagem de boas-vindas
+print("=== GERADOR DE TABUADA ===")
+print("Este programa exibirá a tabuada de multiplicação de um número.")
+print("Você pode escolher um número e ver sua tabuada de 1 a 10.")
+print()
+
+# Entrada de dados: solicita um número ao usuário
+entrada = input("Digite um número inteiro para ver sua tabuada: ")
+
+# Conversão de tipo: transforma a entrada em número inteiro
+try:
+    numero = int(entrada)
+
+    # Cabeçalho da tabuada
+    print("\n" + "="*30)
+    print(f"Tabuada do número {numero}")
+    print("="*30)
+
+    # Loop para gerar e exibir a tabuada de 1 a 10
+    for i in range(1, 11):
+        resultado = numero * i
+        # Formatação de strings com alinhamento para manter a tabela organizada
+        print(f"{numero:2} x {i:2} = {resultado:3}")
+    
+    print("="*30)
+    print("Fim da tabuada.\n")
+
+except ValueError:
+    # Mensagem de erro caso o valor digitado não seja um número inteiro
+    print("Erro: Você deve digitar um número inteiro válido.")
