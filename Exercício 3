@@ -1,12 +1,12 @@
-# Gerador de Tabuada - Versão Completa e Organizada
+# Gerador de Tabuada
 
-# Exibe uma mensagem de boas-vindas
+# Exibir uma mensagem de boas-vindas
 print("=== GERADOR DE TABUADA ===")
 print("Este programa exibirá a tabuada de multiplicação de um número.")
 print("Você pode escolher um número e ver sua tabuada de 1 a 10.")
 print()
 
-# Entrada de dados: solicita um número ao usuário
+# Entrada de dados: solicitar um número ao usuário
 entrada = input("Digite um número inteiro para ver sua tabuada: ")
 
 # Conversão de tipo: transforma a entrada em número inteiro
